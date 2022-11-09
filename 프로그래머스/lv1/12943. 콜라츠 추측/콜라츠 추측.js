@@ -8,7 +8,7 @@ function solution(num) {
     var answer = 0;
     
     while(true){
-    if(num === 1 || num === 0){return answer}
+    if(num === 1){return answer}
     else if(answer > 500){return -1}
     
     if(num%2 === 0){
