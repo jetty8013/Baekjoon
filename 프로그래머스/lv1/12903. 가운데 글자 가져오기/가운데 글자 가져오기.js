@@ -2,8 +2,6 @@
 //     var answer = '';
 //     let count = s
     
-    
-    
 //     count=Math.round(count.length/2)
     
 //     if(s.length%2 != 0){
@@ -19,7 +17,7 @@
 // 예전 코드 
 // ,,,, ? 왜저래 .. 
 
-
+//substr 바뀜 ;;
 
 function solution(s) {
     let divide_str = 0
