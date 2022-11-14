@@ -1,13 +1,14 @@
+// arr 순회하면서 다음 index의 요소가 현재 index의 요소와 같으면 건너뜀
+
 function solution(arr)
 {
-    let answer = []
+    var answer = [];
     
-    arr.forEach(value=>{
-  let le = answer.length-1
-
-  if(answer[le] !== value){
-    answer.push(value)}
-    })
+    arr.forEach((element,index) => {
+      if(arr[index+1] !== element){
+        answer.push(element)
+      }
+    });
 
     return answer;
 }
