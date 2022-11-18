@@ -7,10 +7,9 @@ function solution(numbers) {
   let answer = [];
   numbers.forEach((element,index) => {
     for(let i = index+1;i<numbers.length;i++){
-      answer.push(element + numbers[i])
+      answer.push(element + numbers[i]);
     }
   })
-  answer = answer.filter((v,i) => answer.indexOf(v) === i);
-  answer.sort((a,b) => a - b); 
+  answer = answer.filter((v,i) => answer.indexOf(v) === i).sort((a,b) => a - b);
   return answer;
 }
