@@ -6,9 +6,8 @@
 * 
 * 1. N+1 만큼 스테이지 배열 생성
 * 2. 스테이지마다 실패율을 구해준뒤 gameStages 배열에 넣어준다
-* 
-* 실패율에 따라서 정렬
-* 
+* 3. 실패율에 따라서 정렬
+* 4. nowStages만 배열에 담아 리턴
 */
 
 function solution(N, stages) {
