@@ -6,15 +6,15 @@
 * 3. 1명이라고 했으니까 join 으로 마무리
 */
 
-// function solution(participant, completion) {
-//   completion.forEach(element => {
-//     const findIndex = participant.indexOf(element)
-//     if(findIndex !== -1){
-//     delete participant[findIndex];
-//     }
-//   })
-//   return participant.filter(el => el!==undefined).join("")
-// }
+function solution1(participant, completion) {
+  completion.forEach(element => {
+    const findIndex = participant.indexOf(element)
+    if(findIndex !== -1){
+    delete participant[findIndex];
+    }
+  })
+  return participant.filter(el => el!==undefined).join("")
+}
 
 /*
 * 1. join(" ")으로 합치기
@@ -22,14 +22,14 @@
 * 3. 마지막 공백 제거
 */
 
-// function solution(participant, completion) {
-//   let str = participant.join(" ")
-//   completion.forEach(element => {
-//     str = str.replace(element,"")
-//   });
-//   str = str.replaceAll(" ","")
-//   return str
-// }
+function solution2(participant, completion) {
+  let str = participant.join(" ")
+  completion.forEach(element => {
+    str = str.replace(element,"")
+  });
+  str = str.replaceAll(" ","")
+  return str
+}
 
 
 /*
