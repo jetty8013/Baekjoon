@@ -43,3 +43,44 @@ function solution(id_list, report, k) {
 
   return Object.values(result)
 }
+
+/*
+let state = []
+let save = []
+let answer2 = []
+let answer = []
+function solution(id_list, report, k) {
+    for(let i=0;i<id_list.length;i++){
+    state.push({이름 : id_list[i],횟수 : 0,신고한사람 : ""})
+    }
+    for(let a=0;a<report.length;a++){
+       save = report[a].split(" ")
+            for(let i=0;i<id_list.length;i++){
+               if(state[i].이름 == save[1]){
+                   if(state[i].신고한사람.indexOf(save[0]) == -1){
+                   //if(state[i].신고한사람.indexOf(save[1]) == -1){
+                   state[i].횟수 += 1
+                   state[i].신고한사람 += save[0] + " "
+                   }
+               }
+            }
+    }
+
+    for(let x=0;x<id_list.length;x++){
+        if(state[x].횟수 >= k){
+            answer2.push(state[x].신고한사람.split(" "))
+            
+        } 
+    }
+    answer2 = answer2.join("").split(",")
+    //answer2.pop()
+    answer.length = id_list.length
+    answer.fill(0)
+
+    for(let c=0;c<answer2.length;c++){
+           answer[id_list.indexOf(answer2[c])] += 1
+    }        
+    
+    return answer;
+}
+*/
